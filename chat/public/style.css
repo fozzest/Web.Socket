@@ -1,0 +1,542 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  background-color: black;
+}
+
+
+
+/** Black */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 900;
+  src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+}
+
+/** Bold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
+}
+
+/** Thin */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 300;
+  src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
+}
+
+/** Ultralight */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 100;
+  src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
+}
+
+/*---------------------------------------------------------------------------*
+ * SF UI Text
+ *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Text-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Text-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Text-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Text-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Text-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SF-UI-Text-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-SemiboldItalic.otf");
+}
+
+/** Ultrathin */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 100;
+  src: url("https://sf.abarba.me/SF-UI-Text-Ultrathin.otf");
+}
+
+/** Ultrathin Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 100;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-UltrathinItalic.otf");
+}
+
+/*---------------------------------------------------------------------------*
+ * SF Mono
+ *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SFMono-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SFMono-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SFMono-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SFMono-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SFMono-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SFMono-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");
+}
+
+
+h3{
+  background-image: 'uploads/grad.png' ;
+  background: -webkit-linear-gradient(#b8d2fc, #ffb5f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+font-size:90px;
+font-weight: 600;
+}
+
+h5{
+  background-image: 'uploads/grad.png' ;
+  background: -webkit-linear-gradient(#b8d2fc, #ffb5f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+font-size:40px;
+font-weight: 600;
+margin:10px;
+
+}
+
+h1{
+  background-image: 'uploads/grad.png' ;
+  background: -webkit-linear-gradient(#b8d2fc, #ffb5f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  margin-bottom:30px;
+  
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+font-size:150px;
+font-weight: 600;
+
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 20%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 500px;
+}
+
+.login.page .title {
+  font-size: 200%;
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  
+  font-weight: 600;
+  
+}
+
+/* Chat page */
+
+.chat.page {
+  display: none;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 0px;
+  
+  border: 2px solid white;
+  border-color: white;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bt01{
+  background-color: #E1FFBB;
+}
+.bt02{
+  background-color: #f4511e;
+}
+.bt03{
+  background-color: #E4DFB9;
+}
+.bt04{
+  background-color: #9948FF;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.messages {
+  font-size: 150%;
+}
+
+.inputMessage {
+  font-size: 100%;
+}
+
+.log {
+  color: gray;
+  font-size: 70%;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Messages */
+
+.chatArea {
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.messages {
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 10px 20px 10px 20px;
+}
+
+.message.typing .messageBody {
+  color: gray;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* Input */
+.parisMap{
+
+}
+
+.parisWall{
+
+}
+
+.inputMessage {
+  border: 10px solid #000;
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  outline: none;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.whiteboard {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.colors {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 48px;
+  width: 200px;
+}
+
+.color.black { background-color: linear-gradient(red, yellow); }
+.color.red { background-image: 'uploads/grad.png'; }
+.color.green { background-color: green; }
+.color.blue { background-color: blue; }
+.color.yellow { background-color: yellow; }
